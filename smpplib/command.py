@@ -185,7 +185,7 @@ class Command(pdu.PDU):
                 field_value = field_value[0:self.params[field].max - 1]
 
             if field_value:
-                value = field_value + chr(0)
+                value = str(field_value) + chr(0)
             else:
                 value = chr(0)
 
